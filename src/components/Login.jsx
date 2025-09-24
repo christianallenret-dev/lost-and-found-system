@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import HomePage from "./HomePage"
 import './Login.css'
 import logo from '../img/lost-and-found.png'

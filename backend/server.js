@@ -52,7 +52,7 @@ app.post('/users', async(req, res) => {
 app.get('/users/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const [rows] = await db.execute('SELECT id, username FROM users WHERE id = ?', [id]);
+    const [rows] = await db.execute('SELECT id, first_name, last_name, username, email, gender, phone_number FROM users WHERE id = ?', [id]);
     console.log('Query Result:', rows);
 
     if (rows.length === 0) {
